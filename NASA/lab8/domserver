@@ -1,0 +1,2 @@
+docker run -d --name domserver --network domjudge-net -e MYSQL_HOST=dj-mariadb -e MYSQL_USER=richardlaiis -e MYSQL_DATABASE=DOMJdatabase -e MYSQL_PASSWORD=1234 -e MYSQL_ROOT_PASSWORD=1234 -p 12345:80 domjudge/domserver:latest
+

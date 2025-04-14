@@ -1,0 +1,1 @@
+docker run -d --name dj-mariadb --network domjudge-net -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_USER=richardlaiis -e MYSQL_PASSWORD=1234 -e MYSQL_DATABASE=DOMJdatabase -p 13306:3306 mariadb --max-connections=1000
