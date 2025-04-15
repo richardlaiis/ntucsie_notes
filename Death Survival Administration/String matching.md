@@ -21,6 +21,9 @@ $\sqsupset$
 $\sqsubset$
 
 ## The Knuth-Morris-Pratt Algo (KMP)
+## intuition
+Given a pattern $P$ and and text $T$, if we find $P[1:q]$ matches $T[1+s:s+q]$, we can skip some shiftings by memorizing "something". More practically, we want to find the longest prefix of $P$ such that it match the suffix of $T[1+s:s+q]$. In other words, what we need to do is find the smallest shift $s'$ such that some $k<q$ satisfies $P[1:k]$ matches $T[1+s':s'+k]$. There $s'=s+q-k$.
+
 ## The Rabin-Karp Algo
 
 **Average** running time is $O(n)$.
