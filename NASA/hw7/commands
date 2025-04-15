@@ -1,0 +1,2 @@
+ssh b13902022@nasaws3.csie.ntu.edu.tw -L 1111:localhost:1122
+ssh root@192.168.148.246 -L 1122:localhost:8006
